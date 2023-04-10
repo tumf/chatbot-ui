@@ -7,9 +7,10 @@ export const config = {
 
 const handler = async (req: Request): Promise<Response> => {
   try {
-    const { key } = (await req.json()) as {
-      key: string;
-    };
+    // const { key } = (await req.json()) as {
+    //   key: string;
+    // };
+    const key = null;
 
     const response = await fetch(`${OPENAI_API_HOST}/v1/models`, {
       headers: {
